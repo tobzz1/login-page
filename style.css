@@ -3,6 +3,17 @@
 *{
     box-sizing: border-box;
 }
+
+@keyframes animation-input{
+    from{
+        border: 1px solid transparent;
+    }
+    to{
+        border: 1px solid #00ff88;
+        box-shadow: 0px 10px 40px -12px #00ff8052;
+    }
+}
+
 body{
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
@@ -86,8 +97,7 @@ body{
 }
 
 .textfield input:focus{
-    border: 1px solid #00ff88;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    animation: animation-input 0.5s forwards;
 }
 
 .textfield label{
